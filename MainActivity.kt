@@ -24,6 +24,20 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+        override fun onResume() {
+        super.onResume()
+        Log.d("MainActivity", "App is Resumed")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("MainActivity", "App is Paused")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("MainActivity", "App is Stopped")
+    }
 }
 
 @Composable
